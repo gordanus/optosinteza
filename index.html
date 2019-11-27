@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/onepage-scroll.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.onepage-scroll.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div class="main">
+    <section>
+      <h1>Prvi naslov</h1>
+    </section>
+
+    <section>
+      <h1>Drugi naslov</h1>
+    </section>
+  </div>
+
+  <script>
+      $(document).ready(function(){
+        $(".main").onepage_scroll({
+          sectionContainer: "section",
+          //responsiveFallback: 600,
+          loop: true,
+          pagination: true
+        });
+      });
+      
+    </script>
+</body>
+</html>
