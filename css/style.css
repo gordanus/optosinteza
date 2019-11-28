@@ -6,31 +6,124 @@
     margin: 0;
     padding: 0;
     font-family: 'Exo 2', sans-serif;
+    scroll-behavior: smooth;
   }
 
   #one{
-    background-image: url(../img/Bg-01.jpg);
+    background-image: url(../img/Bg-02.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* min-height: 100%; */
   }
 
-  h1{
-    color:white;
-    font-size:3em;
+  #two{
+    background-color: lightgray;
+  }
+
+  .heading{
+    color:rgb(68, 68, 68);
+    font-size:5em;
     position: absolute;
-    bottom: 20%;
-    left:5%;
+    bottom: 50%;
+    left:50%;
     z-index: 5;
-    /* transform: translate(-55%,-55%); */
+    width: 100%;
+    transform: translate(-28%);
+  }
+
+  /* .heading span{
+    color: #ace600;
+  } */
+
+  h2{
+    color:rgb(68, 68, 68);
+    font-size:2em;
+    position: absolute;
+    bottom: 43%;
+    left:85%;
+    z-index: 5;
+    width: 100%;
+    transform: translate(-40%);
+  }
+
+  h3{
+    color:rgb(68, 68, 68);
+    font-size:1.5em;
+    position: absolute;
+    bottom: 35%;
+    left:20%;
+    z-index: 5;
+    width: 100%;
+    /* transform: translate(-40%); */
   }
 
   .overlay{
-    background-color: black;
+    background-color: white;
     min-height: 100%;
-    opacity: 0.7;
+    opacity: 0.6;
   }
+
+  /* down arrow */
+
+  .arrow-container {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateZ(0deg);
+    z-index: 5;
+  }
+  .arrow-container:hover {
+    cursor: pointer;
+  }
+  .arrow-container:hover .arrow {
+    top: 50%;
+  }
+  .arrow-container:hover .arrow:before {
+    transform: translate(-50%, -50%) rotateZ(-30deg);
+  }
+  .arrow-container:hover .arrow:after {
+    transform: translate(-50%, -50%) rotateZ(30deg);
+  }
+  
+  .arrow {
+    position: absolute;
+    left: 50%;
+    transition: all .4s ease;
+  }
+  .arrow:before, .arrow:after {
+    transition: all .4s ease;
+    content: '';
+    display: block;
+    position: absolute;
+    transform-origin: bottom right;
+    background: #000;
+    width: 4px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translate(-50%, -50%) rotateZ(-45deg);
+  }
+  .arrow:after {
+    transform-origin: bottom left;
+    transform: translate(-50%, -50%) rotateZ(45deg);
+  }
+  .arrow:nth-child(1) {
+    opacity: 0.3;
+    top: 35%;
+  }
+  .arrow:nth-child(2) {
+    opacity: 0.6;
+    top: 55%;
+  }
+  .arrow:nth-child(3) {
+    opacity: 0.9;
+    top: 75%;
+  }
+
+  /* down arrow end */
 
 
 

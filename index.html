@@ -6,64 +6,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/onepage-scroll.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="js/jquery.onepage-scroll.js"></script>
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <!-- <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script> -->
   <title>Optosinteza Marglass</title>
 </head>
 
 <body>
   <div class="main">
     <section id="one">
-      <h1 id="app"></h1>
+      <!-- <img class="logo" src="" alt="Optosinteza Marglass logo"> TODO -->
+      <h1 class="heading" id="app">Optosinteza Marglass</h1>
+      <h2>Beograd</h2>
+      <h3>Zvanični distributer okvira iz linije Pro Line, Mono, Reserve i Emporio Sport</h3>
+      <a href="#two" class="arrow-container">
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+      </a>
       <div class="overlay"></div>
     </section>
-
-    <section id="two" style="background-color: cornflowerblue;">
+    <section id="two">
       <h1>Drugi naslov</h1>
+    </section>
+    <section id="three" style="background-color:darkgrey;">
+      <h1>Treci naslov</h1>
     </section>
   </div>
 
-  <script>
-    $(document).ready(function () {
-      $(".main").onepage_scroll({
-        sectionContainer: "section",
-        //responsiveFallback: 600,
-        loop: true,
-        pagination: true
-      });
-    });
-
-    var app = document.getElementById('app');
-
-    var typewriter = new Typewriter(app, {
-      loop: true,
-      delay: 85,
-    });
-
-    typewriter
-      .pauseFor(1000)
-      .typeString('Dobrodošli, mi smo <br>')
-      .pauseFor(800)
-      .typeString('OPTOSINTEZA MARGLASS.')
-      .pauseFor(800)
-      .deleteChars(21)
-      .pauseFor(500)
-      .typeString('<span style="color: blue;">OPTOSINTEZA MARGLASS.</span>')
-      .pauseFor(800)
-      .deleteAll()
-      .pauseFor(500)
-      .typeString('Zvanični smo distributer za stakla i okvire linije Pro Line, Mono, Reserve i Emporio Sport.<br>')
-      .pauseFor(800)
-      .typeString('U nastavku pogledajte našu ponudu.')
-      .pauseFor(800)
-      .deleteAll()
-      .pauseFor(1000)
-      .start();
-
-  </script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
