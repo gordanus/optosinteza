@@ -5,9 +5,36 @@
   html,body{
     margin: 0;
     padding: 0;
+    font-family: 'Exo 2', sans-serif;
   }
 
-  .mainHeading{
+  #one{
+    background-image: url(../img/Bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* min-height: 100%; */
+  }
+
+  h1{
+    color:white;
+    font-size:3em;
+    position: absolute;
+    bottom: 20%;
+    left:5%;
+    z-index: 5;
+    /* transform: translate(-55%,-55%); */
+  }
+
+  .overlay{
+    background-color: black;
+    min-height: 100%;
+    opacity: 0.7;
+  }
+
+
+
+  /* .mainHeading{
     position: absolute;
     font-size: 3em;
     top: 0;
@@ -329,7 +356,7 @@
               transform: translate3d(0, 0, 0);
     }
   }
-  /* Demo purposes */
+
   body {
     font-family: 'Lato';
     -webkit-font-smoothing: antialiased;
@@ -354,4 +381,4 @@
   p {
     margin: 0 0 16px;
   }
-  
+   */
