@@ -3401,7 +3401,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
   padding-top: 18rem;
-  padding-bottom: 12rem;
+  padding-bottom: 5rem;
   background-color: #151515;
   position: relative;
 }
@@ -3560,13 +3560,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .mc-form input[type=submit] {
-  height: 6.6rem;
-  line-height: 6.2rem;
+  height: 5.6rem;
+  line-height: 5.2rem;
   margin: 0;
   color: #FFFFFF;
   background: #ace600;
   border-color: #ace600;
   padding: 0 20px;
+  border-radius: 5px;
 }
 
 .mc-form label {

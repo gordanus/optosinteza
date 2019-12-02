@@ -339,7 +339,7 @@
         
         $('#mc-form').ajaxChimp({
             language: 'es',
-            url: cfg.mailChimpURL
+            url: "https://gmail.us4.list-manage.com/subscribe/post?u=00acbca3ab894a17f8eb17ad8&amp;id=c0dac41ea8"
         });
 
         // Mailchimp translation
@@ -354,9 +354,9 @@
         //  5: 'This email address looks fake or invalid. Please enter a real email address'
 
         $.ajaxChimp.translations.es = {
-            'submit': 'Submitting...',
+            'submit': 'Slanje...',
             0: '<i class="fas fa-check"></i> We have sent you a confirmation email',
-            1: '<i class="fas fa-exclamation-circle"></i> You must enter a valid e-mail address.',
+            1: '<i class="fas fa-exclamation-circle"></i> Morate uneti validnu email adresu.',
             2: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             3: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
             4: '<i class="fas fa-exclamation-circle"></i> E-mail address is not valid.',
