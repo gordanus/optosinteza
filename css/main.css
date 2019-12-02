@@ -3773,7 +3773,7 @@ footer a:visited {
 }
 
 .cl-go-top::after {
-  content: "back to top";
+  content: "na početak";
   display: inline-block;
   width: 120px;
   font-size: 1.2rem;
